@@ -9,13 +9,15 @@ function Home() {
 
     useEffect(() => {
         if (data && data.posts && data.posts.length) {
-            setPosts(data);    
+            setPosts(data.posts);    
         }    
     }, [data]);
 
     useEffect(() => {
         setCurrentPost(posts[0]);
     }, [posts]);
+
+    console.log(posts);
 
     return (
         <div>
@@ -24,6 +26,12 @@ function Home() {
             }
             {error ?
                 <h3>{error}</h3> : null
+            }
+            {currentPost &&
+                <div>
+                    <h2>{currentPost.title}</h2>
+                    <p>{currentPost.body}</p>
+                </div>
             }
 
         </div>
