@@ -8,6 +8,12 @@ function Home() {
     const [currentPost, setCurrentPost] = useState();
 
     useEffect(() => {
+        if (data && data.posts && data.posts.length) {
+            setPosts(data);    
+        }    
+    }, [data]);
+
+    useEffect(() => {
         setCurrentPost(posts[0]);
     }, [posts]);
 
@@ -19,9 +25,7 @@ function Home() {
             {error ?
                 <h3>{error}</h3> : null
             }
-            {
-                data && setPosts(data.posts)
-            }
+
         </div>
     )
 }
