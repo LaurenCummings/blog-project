@@ -7,6 +7,10 @@ function Home() {
     const [posts, setPosts] = useState([]);
     const [currentPost, setCurrentPost] = useState();
 
+    useEffect(() => {
+        setCurrentPost(posts[0]);
+    }, [posts]);
+
     return (
         <div>
             {pending ? 
