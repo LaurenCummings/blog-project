@@ -5,6 +5,7 @@ import { useState } from 'react';
 function Home() {
     const { data, error, pending } = useFetch(getPosts, {});
     const [posts, setPosts] = useState([]);
+    const [currentPost, setCurrentPost] = useState();
 
     return (
         <div>
