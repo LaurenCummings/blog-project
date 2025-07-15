@@ -1,3 +1,5 @@
+import { getPosts } from '../ApiCalls';
+
 function Home() {
     return (
         <div>
