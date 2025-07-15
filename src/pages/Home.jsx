@@ -1,4 +1,5 @@
 import { getPosts } from '../ApiCalls';
+import useFetch from '../components/useFetch';
 
 function Home() {
     return (
