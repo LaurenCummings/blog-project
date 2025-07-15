@@ -1,8 +1,10 @@
 import { getPosts } from '../ApiCalls';
 import useFetch from '../components/useFetch';
+import { useState } from 'react';
 
 function Home() {
     const { data, error, pending } = useFetch(getPosts, {});
+    const [posts, setPosts] = useState([]);
 
     return (
         <div>
