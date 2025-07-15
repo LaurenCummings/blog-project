@@ -1,6 +1,6 @@
 import { getPosts } from '../ApiCalls';
 import useFetch from '../components/useFetch';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Home() {
     const { data, error, pending } = useFetch(getPosts, {});
@@ -16,7 +16,7 @@ function Home() {
                 <h3>{error}</h3> : null
             }
             {
-                data && console.log(data)
+                data && setPosts(data.posts)
             }
         </div>
     )
