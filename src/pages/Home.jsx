@@ -21,20 +21,27 @@ function Home() {
     console.log(posts);
 
     return (
-        <div>
-            {pending ? 
-                <h3>Loading...</h3> : null
-            }
-            {error ?
-                <h3>{error}</h3> : null
-            }
-            {currentPost &&
-                <div>
-                    <h2>{currentPost.title}</h2>
-                    <p>{currentPost.body}</p>
-                </div>
-            }
-
+        <div className="home">
+            <div className="categories">
+                Categories
+            </div>
+            <div className="feed">
+                {pending ? 
+                    <h3>Loading...</h3> : null
+                }
+                {error ?
+                    <h3>{error}</h3> : null
+                }
+                {currentPost &&
+                    <div className="current-post">
+                        <h2>{currentPost.title}</h2>
+                        <p>{currentPost.body}</p>
+                    </div>
+                }
+            </div>
+            <div className="suggested-posts">
+                Suggested posts
+            </div>
         </div>
     )
 }

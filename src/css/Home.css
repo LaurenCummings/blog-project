@@ -1,0 +1,15 @@
+.home {
+    display: flex;
+}
+
+.categories {
+    flex: 3;
+}
+
+.feed {
+    flex: 5;
+}
+
+.suggested-posts {
+    flex: 4;
+}
