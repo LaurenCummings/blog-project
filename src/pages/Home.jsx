@@ -39,7 +39,7 @@ function Home() {
         }
     }, [currentPost]);
 
-    console.log(posts);
+    console.log("first post:", firstPost, "last post:", lastPost);
 
     return (
         <div className="home">
@@ -59,7 +59,7 @@ function Home() {
                         <h2>{currentPost.title}</h2>
                         <p>{currentPost.body}</p>
                         <div className="post-arrows">
-                            <div className="arrow-left" onClick={getPrevPost}>
+                            <div className={firstPost ? "arrow-left arrow-hide" : "arrow-left"} onClick={getPrevPost}>
                                 <FaArrowLeft />
                                 <p>Previous</p>
                             </div>
