@@ -11,6 +11,10 @@
     flex: 5;
 }
 
+.post-body {
+    min-height: 100px;
+}
+
 .post-arrows {
     display: flex;
 }

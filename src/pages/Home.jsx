@@ -62,7 +62,7 @@ function Home() {
                     <div className="current-post">
                         <p>Post #{currentPost.id}</p>
                         <h2>{currentPost.title}</h2>
-                        <p>{currentPost.body}</p>
+                        <p className="post-body">{currentPost.body}</p>
                         <div className="post-arrows">
                             <div className={firstPost ? "arrow-hide" : "arrow-left"} onClick={getPrevPost}>
                                 <FaArrowLeft />
