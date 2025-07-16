@@ -9,6 +9,14 @@ function Home() {
     const [posts, setPosts] = useState([]);
     const [currentPost, setCurrentPost] = useState();
 
+    function getNextPost() {
+
+    }
+
+    function getPrevPost() {
+
+    }
+
     useEffect(() => {
         if (data && data.posts && data.posts.length) {
             setPosts(data.posts);    
@@ -39,11 +47,11 @@ function Home() {
                         <h2>{currentPost.title}</h2>
                         <p>{currentPost.body}</p>
                         <div className="post-arrows">
-                            <div className="arrow-left">
+                            <div className="arrow-left" onClick={getPrevPost}>
                                 <FaArrowLeft />
                                 <p>Previous</p>
                             </div>
-                            <div className="arrow-right">
+                            <div className="arrow-right" onClick={getNextPost}>
                                 <p>Next</p>
                                 <FaArrowRight />
                             </div>
