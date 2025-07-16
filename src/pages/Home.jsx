@@ -37,6 +37,10 @@ function Home() {
                         <p>Post #{currentPost.id}</p>
                         <h2>{currentPost.title}</h2>
                         <p>{currentPost.body}</p>
+                        <div className="post-arrows">
+                            <p>Previous Post</p>
+                            <p>Next Post</p>
+                        </div>
                     </div>
                 }
             </div>
