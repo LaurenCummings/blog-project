@@ -34,6 +34,7 @@ function Home() {
                 }
                 {currentPost &&
                     <div className="current-post">
+                        <p>Post #{currentPost.id}</p>
                         <h2>{currentPost.title}</h2>
                         <p>{currentPost.body}</p>
                     </div>
