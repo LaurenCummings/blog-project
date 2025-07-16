@@ -10,7 +10,8 @@ function Home() {
     const [currentPost, setCurrentPost] = useState();
 
     function getNextPost() {
-
+        const nextPostId = currentPost.id + 1;
+        setCurrentPost(posts[nextPostId - 1]);
     }
 
     function getPrevPost() {
