@@ -34,8 +34,13 @@ function Home() {
     useEffect(() => {
         if (currentPost && currentPost.id == 1) {
             setFirstPost(true);
-        } else if (currentPost && currentPost.id == posts.length) {
+        } else {
+            setFirstPost(false);
+        }
+        if (currentPost && currentPost.id == posts.length) {
             setLastPost(true);
+        } else {
+            setLastPost(false);
         }
     }, [currentPost]);
 

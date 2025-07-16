@@ -28,6 +28,10 @@
     margin-left: auto;
 }
 
+.arrow-hide {
+    display: none;
+}
+
 .suggested-posts {
     flex: 4;
 }
