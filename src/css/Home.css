@@ -21,11 +21,13 @@
 
 .arrow-left {
     display: flex;
+    cursor: pointer;
 }
 
 .arrow-right {
     display: flex;
     margin-left: auto;
+    cursor: pointer;
 }
 
 .arrow-hide {
