@@ -3,6 +3,7 @@ import { getPosts } from '../ApiCalls';
 import useFetch from '../components/useFetch';
 import { useState, useEffect } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import Categories from '../components/Categories';
 
 function Home() {
     const { data, error, pending } = useFetch(getPosts, {});
@@ -49,7 +50,7 @@ function Home() {
     return (
         <div className="home">
             <div className="categories">
-                Categories
+                <Categories />
             </div>
             <div className="feed">
                 {pending ? 
