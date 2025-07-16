@@ -15,7 +15,8 @@ function Home() {
     }
 
     function getPrevPost() {
-
+        const prevPostId = currentPost.id - 1;
+        setCurrentPost(posts[prevPostId - 1]);
     }
 
     useEffect(() => {
