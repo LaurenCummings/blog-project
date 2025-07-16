@@ -1,3 +1,4 @@
+import '../css/Home.css';
 import { getPosts } from '../ApiCalls';
 import useFetch from '../components/useFetch';
 import { useState, useEffect } from 'react';
