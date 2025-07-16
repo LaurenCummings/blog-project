@@ -11,6 +11,19 @@
     flex: 5;
 }
 
+.post-arrows {
+    display: flex;
+}
+
+.arrow-left {
+    display: flex;
+}
+
+.arrow-right {
+    display: flex;
+    margin-left: auto;
+}
+
 .suggested-posts {
     flex: 4;
 }

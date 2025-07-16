@@ -39,13 +39,13 @@ function Home() {
                         <h2>{currentPost.title}</h2>
                         <p>{currentPost.body}</p>
                         <div className="post-arrows">
-                            <div className="left-arrow">
+                            <div className="arrow-left">
                                 <FaArrowLeft />
                                 <p>Previous</p>
                             </div>
-                            <div className="right-arrow">
-                                <FaArrowRight />
+                            <div className="arrow-right">
                                 <p>Next</p>
+                                <FaArrowRight />
                             </div>
                         </div>
                     </div>
