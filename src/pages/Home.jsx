@@ -2,6 +2,7 @@ import '../css/Home.css';
 import { getPosts } from '../ApiCalls';
 import useFetch from '../components/useFetch';
 import { useState, useEffect } from 'react';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 function Home() {
     const { data, error, pending } = useFetch(getPosts, {});
@@ -38,8 +39,14 @@ function Home() {
                         <h2>{currentPost.title}</h2>
                         <p>{currentPost.body}</p>
                         <div className="post-arrows">
-                            <p>Previous Post</p>
-                            <p>Next Post</p>
+                            <div className="left-arrow">
+                                <FaArrowLeft />
+                                <p>Previous</p>
+                            </div>
+                            <div className="right-arrow">
+                                <FaArrowRight />
+                                <p>Next</p>
+                            </div>
                         </div>
                     </div>
                 }
