@@ -68,7 +68,7 @@ function Home() {
                                 <FaArrowLeft />
                                 <p>Previous</p>
                             </div>
-                            <div className="arrow-right" onClick={getNextPost}>
+                            <div className={lastPost ? "arrow-right arrow-hide" : "arrow-right"} onClick={getNextPost}>
                                 <p>Next</p>
                                 <FaArrowRight />
                             </div>
