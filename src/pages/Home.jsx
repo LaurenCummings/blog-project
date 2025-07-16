@@ -64,11 +64,11 @@ function Home() {
                         <h2>{currentPost.title}</h2>
                         <p>{currentPost.body}</p>
                         <div className="post-arrows">
-                            <div className={firstPost ? "arrow-left arrow-hide" : "arrow-left"} onClick={getPrevPost}>
+                            <div className={firstPost ? "arrow-hide" : "arrow-left"} onClick={getPrevPost}>
                                 <FaArrowLeft />
                                 <p>Previous</p>
                             </div>
-                            <div className={lastPost ? "arrow-right arrow-hide" : "arrow-right"} onClick={getNextPost}>
+                            <div className={lastPost ? "arrow-hide" : "arrow-right"} onClick={getNextPost}>
                                 <p>Next</p>
                                 <FaArrowRight />
                             </div>
