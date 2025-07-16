@@ -45,8 +45,6 @@ function Home() {
         }
     }, [currentPost]);
 
-    console.log("first post:", firstPost, "last post:", lastPost);
-
     return (
         <div className="home">
             <div className="categories">
