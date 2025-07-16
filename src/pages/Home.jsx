@@ -8,6 +8,8 @@ function Home() {
     const { data, error, pending } = useFetch(getPosts, {});
     const [posts, setPosts] = useState([]);
     const [currentPost, setCurrentPost] = useState();
+    const [firstPost, setFirstPost] = useState(false);
+    const [lastPost, setLastPost] = useState(false);
 
     function getNextPost() {
         const nextPostId = currentPost.id + 1;
