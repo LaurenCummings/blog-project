@@ -31,6 +31,14 @@ function Home() {
         setCurrentPost(posts[0]);
     }, [posts]);
 
+    useEffect(() => {
+        if (currentPost && currentPost.id == 1) {
+            setFirstPost(true);
+        } else if (currentPost && currentPost.id == posts.length) {
+            setLastPost(true);
+        }
+    }, [currentPost]);
+
     console.log(posts);
 
     return (
