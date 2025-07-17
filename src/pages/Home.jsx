@@ -2,6 +2,7 @@ import '../css/Home.css';
 import { useState } from 'react';
 import Categories from '../components/Categories';
 import Feed from '../components/Feed';
+import SearchResults from '../components/SearchResults';
 
 function Home() {
     const [showFeed, setShowFeed] = useState(true);
@@ -12,7 +13,9 @@ function Home() {
                 <Categories />
             </div>
             <div className="feed">
-                <Feed />
+                { showFeed ? 
+                    <Feed /> : <SearchResults />
+                }
             </div>
             <div className="suggested-posts">
                 Suggested posts
