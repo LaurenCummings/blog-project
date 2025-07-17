@@ -12,6 +12,8 @@ function Home() {
         setCategory(selectedCategory);
     }
 
+    console.log(category);
+
     return (
         <div className="home">
             <div className="categories">

@@ -7,8 +7,8 @@ function Categories({ selectCategory }) {
     const { data, error, pending } = useFetch(getPostTags, {});
     const [categories, setCategories] = useState();
 
-    function handleClick() {
-        const dataToSend = "Hello";
+    function handleClick(category) {
+        const dataToSend = category;
         selectCategory(dataToSend);
     }
 
@@ -24,7 +24,7 @@ function Categories({ selectCategory }) {
             <div className="categories-list">
                 {categories && categories.sort().map((item, index) => {
                     return (
-                        <li key={index} onClick={handleClick}>{item}</li>  
+                        <li key={index} onClick={() => handleClick(item)}>{item}</li>  
                     )
                 })}
             </div>
