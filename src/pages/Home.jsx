@@ -1,8 +1,10 @@
 import '../css/Home.css';
+import { useState } from 'react';
 import Categories from '../components/Categories';
 import Feed from '../components/Feed';
 
 function Home() {
+    const [showFeed, setShowFeed] = useState(true);
 
     return (
         <div className="home">
