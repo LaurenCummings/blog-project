@@ -1,7 +1,7 @@
 import '../css/Home.css';
 import { useState } from 'react';
 import Categories from '../components/Categories';
-import Feed from '../components/Feed';
+import CurrentPost from '../components/CurrentPost';
 import SearchResults from '../components/SearchResults';
 
 function Home() {
@@ -14,7 +14,7 @@ function Home() {
             </div>
             <div className="feed">
                 { showCurrentPost ? 
-                    <Feed /> : <SearchResults />
+                    <CurrentPost /> : <SearchResults />
                 }
             </div>
             <div className="suggested-posts">

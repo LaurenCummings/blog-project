@@ -1,10 +1,10 @@
-import '../css/Feed.css';
+import '../css/CurrentPost.css';
 import { getPosts } from '../ApiCalls';
-import useFetch from '../components/useFetch';
+import useFetch from './useFetch';
 import { useState, useEffect } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-function Feed() {
+function CurrentPost() {
     const { data, error, pending } = useFetch(getPosts, {});
     const [posts, setPosts] = useState([]);
     const [currentPost, setCurrentPost] = useState();
@@ -73,4 +73,4 @@ function Feed() {
     )
 }
 
-export default Feed;
+export default CurrentPost;
