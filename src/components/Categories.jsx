@@ -3,9 +3,14 @@ import { getPostTags } from '../ApiCalls';
 import useFetch from '../components/useFetch';
 import { useState, useEffect } from 'react';
 
-function Categories() {
+function Categories({ selectCategory }) {
     const { data, error, pending } = useFetch(getPostTags, {});
     const [categories, setCategories] = useState();
+
+    function handleClick() {
+        const dataToSend = "Hello";
+        selectCategory(dataToSend);
+    }
 
     useEffect(() => {
         if (data) {
@@ -19,7 +24,7 @@ function Categories() {
             <div className="categories-list">
                 {categories && categories.sort().map((item, index) => {
                     return (
-                        <li key={index}>{item}</li>  
+                        <li key={index} onClick={handleClick}>{item}</li>  
                     )
                 })}
             </div>
