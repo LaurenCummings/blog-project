@@ -14,12 +14,15 @@ function Categories() {
     }, [data]);
     
     return (
-        <div className="categories-list">
-            {categories && categories.sort().map((item, index) => {
-                return (
-                    <li key={index}>{item}</li>  
-                )
-            })}
+        <div>
+            <h2>Search by Topic</h2>
+            <div className="categories-list">
+                {categories && categories.sort().map((item, index) => {
+                    return (
+                        <li key={index}>{item}</li>  
+                    )
+                })}
+            </div>
         </div>
     )
 }
