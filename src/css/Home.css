@@ -11,33 +11,6 @@
     flex: 5;
 }
 
-.post-body {
-    min-height: 100px;
-}
-
-.post-arrows {
-    display: flex;
-}
-
-.post-arrows p {
-    margin: 0px 10px;
-}
-
-.arrow-left {
-    display: flex;
-    cursor: pointer;
-}
-
-.arrow-right {
-    display: flex;
-    margin-left: auto;
-    cursor: pointer;
-}
-
-.arrow-hide {
-    display: none;
-}
-
 .suggested-posts {
     flex: 4;
 }
