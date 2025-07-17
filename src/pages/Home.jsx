@@ -6,11 +6,16 @@ import SearchResults from '../components/SearchResults';
 
 function Home() {
     const [showCurrentPost, setShowCurrentPost] = useState(true);
+    const [category, setCategory] = useState();
+
+    function handleCategorySelect(selectedCategory) {
+        setCategory(selectedCategory);
+    }
 
     return (
         <div className="home">
             <div className="categories">
-                <Categories />
+                <Categories selectCategory={handleCategorySelect}/>
             </div>
             <div className="feed">
                 { showCurrentPost ? 
