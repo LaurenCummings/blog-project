@@ -5,7 +5,7 @@ import Feed from '../components/Feed';
 import SearchResults from '../components/SearchResults';
 
 function Home() {
-    const [showFeed, setShowFeed] = useState(true);
+    const [showCurrentPost, setShowCurrentPost] = useState(true);
 
     return (
         <div className="home">
@@ -13,7 +13,7 @@ function Home() {
                 <Categories />
             </div>
             <div className="feed">
-                { showFeed ? 
+                { showCurrentPost ? 
                     <Feed /> : <SearchResults />
                 }
             </div>
