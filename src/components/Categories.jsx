@@ -15,7 +15,7 @@ function Categories() {
     
     return (
         <div className="categories-list">
-            {categories && categories.map((item, index) => {
+            {categories && categories.sort().map((item, index) => {
                 return (
                     <li key={index}>{item}</li>  
                 )
