@@ -17,7 +17,10 @@ function SearchResults(props) {
             <h2>Search Results</h2>
             { postResults && postResults.map((item) => {
                 return (
-                    <h3 key={item.id}>Post #{item.id} {item.title}</h3>
+                    <div key={item.id} className="post-result">
+                        <h3>Post #{item.id}</h3>
+                        <h4>{item.title}</h4>
+                    </div>
                 )
             })
 
