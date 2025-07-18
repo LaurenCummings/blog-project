@@ -17,7 +17,7 @@ function SearchResults(props) {
             <h2>Search Results</h2>
             { postResults && postResults.map((item) => {
                 return (
-                    <h3 key={item.id}>{item.title}</h3>
+                    <h3 key={item.id}>Post #{item.id} {item.title}</h3>
                 )
             })
 
