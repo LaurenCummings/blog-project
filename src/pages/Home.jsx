@@ -5,7 +5,7 @@ import CurrentPost from '../components/CurrentPost';
 import SearchResults from '../components/SearchResults';
 
 function Home() {
-    const [showCurrentPost, setShowCurrentPost] = useState(true);
+    const [showCurrentPost, setShowCurrentPost] = useState(false);
     const [category, setCategory] = useState();
 
     function handleCategorySelect(selectedCategory) {

@@ -1,3 +1,5 @@
+import useFetch from '../components/useFetch';
+
 function SearchResults(props) {
     return (
         <div>
