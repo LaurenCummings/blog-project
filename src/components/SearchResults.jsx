@@ -1,3 +1,4 @@
+import '../css/SearchResults.css';
 import { useState, useEffect } from 'react';
 import useFetch from '../components/useFetch';
 
