@@ -14,6 +14,7 @@ function SearchResults(props) {
 
     return (
         <div>
+            <h2>Search Results</h2>
             <p>{props.category}</p>
         </div>
     )
