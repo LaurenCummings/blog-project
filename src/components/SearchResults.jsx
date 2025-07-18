@@ -1,7 +1,7 @@
-function SearchResults() {
+function SearchResults(props) {
     return (
         <div>
-            Search Results
+            <p>{props.category}</p>
         </div>
     )
 }
