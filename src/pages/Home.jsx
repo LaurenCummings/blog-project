@@ -21,7 +21,7 @@ function Home() {
             </div>
             <div className="feed">
                 { showCurrentPost ? 
-                    <CurrentPost /> : <SearchResults />
+                    <CurrentPost /> : <SearchResults category={category} />
                 }
             </div>
             <div className="suggested-posts">
