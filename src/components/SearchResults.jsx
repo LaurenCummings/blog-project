@@ -20,7 +20,7 @@ function SearchResults(props) {
                 return (
                     <div key={item.id} className="post-result">
                         <h3>Post #{item.id}</h3>
-                        <h4>{item.title}</h4>
+                        <p>{item.title}</p>
                     </div>
                 )
             })
