@@ -7,3 +7,8 @@
 .categories-list li {
     cursor: pointer;
 }
+
+.categories-list li:hover {
+    background-color: black;
+    color: white;
+}
