@@ -15,7 +15,13 @@ function SearchResults(props) {
     return (
         <div>
             <h2>Search Results</h2>
-            <p>{props.category}</p>
+            { postResults && postResults.map((item) => {
+                return (
+                    <h3 key={item.id}>{item.title}</h3>
+                )
+            })
+
+            }
         </div>
     )
 }
