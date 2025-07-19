@@ -14,8 +14,9 @@ function Home() {
         setShowCurrentPost(false);
     }
 
-    function handlePostSelect(selectedPostFromSearch) {
-
+    function handlePostSelect(selectedPostIdFromSearch) {
+        setSelectedPostId(selectedPostIdFromSearch);
+        setShowCurrentPost(true);
     }
 
     console.log(category);
