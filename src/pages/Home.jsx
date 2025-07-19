@@ -13,6 +13,10 @@ function Home() {
         setShowCurrentPost(false);
     }
 
+    function handlePostSelect(selectedPostId) {
+
+    }
+
     console.log(category);
 
     return (
