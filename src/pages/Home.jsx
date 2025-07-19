@@ -19,7 +19,7 @@ function Home() {
         setShowCurrentPost(true);
     }
 
-    console.log(category);
+    console.log(selectedPostId);
 
     return (
         <div className="home">
@@ -28,7 +28,7 @@ function Home() {
             </div>
             <div className="feed">
                 { showCurrentPost ? 
-                    <CurrentPost /> : <SearchResults category={category} />
+                    <CurrentPost /> : <SearchResults category={category} sendSelectedPostToHome={handlePostSelect} />
                 }
             </div>
             <div className="suggested-posts">
