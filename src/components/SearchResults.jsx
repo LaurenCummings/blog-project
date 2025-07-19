@@ -15,7 +15,7 @@ function SearchResults(props) {
 
     return (
         <div>
-            <h2>Search Results ({props.category})</h2>
+            <h2>Search Results for ({props.category})</h2>
             { postResults && postResults.map((item) => {
                 return (
                     <div key={item.id} className="post-result">
