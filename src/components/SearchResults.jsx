@@ -2,12 +2,12 @@ import '../css/SearchResults.css';
 import { useState, useEffect } from 'react';
 import useFetch from '../components/useFetch';
 
-function SearchResults(props, { sendSelectedPostToHome }) {
+function SearchResults(props) {
     const { data, error, pending } = useFetch(`https://dummyjson.com/posts/search?q=${props.category}`, {});
     const [postResults, setPostResults] = useState([]);
 
     function handlePostClick(postId) {
-        sendSelectedPostToHome(postId);
+        props.sendSelectedPostToHome(postId);
     }
 
     useEffect(() => {
