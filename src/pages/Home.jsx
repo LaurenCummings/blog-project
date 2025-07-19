@@ -7,14 +7,14 @@ import SearchResults from '../components/SearchResults';
 function Home() {
     const [showCurrentPost, setShowCurrentPost] = useState(true);
     const [category, setCategory] = useState();
-    const [selectedPost, setSelectedPost] = useState();
+    const [selectedPostId, setSelectedPostId] = useState();
 
     function handleCategorySelect(selectedCategory) {
         setCategory(selectedCategory);
         setShowCurrentPost(false);
     }
 
-    function handlePostSelect(selectedPostId) {
+    function handlePostSelect(selectedPostFromSearch) {
 
     }
 
