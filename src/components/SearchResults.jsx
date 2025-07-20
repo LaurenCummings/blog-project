@@ -16,8 +16,6 @@ function SearchResults(props) {
         }
     },[data]);
 
-    console.log(postResults);
-
     return (
         <div>
             <h2>Search Results for ({props.category})</h2>
