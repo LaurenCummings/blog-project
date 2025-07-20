@@ -17,18 +17,19 @@ function CurrentPost(props) {
         setCurrentPost(props.posts[prevPostId - 1]);
     }
 
-    useEffect(() => {
-        if (props.posts) {
-            setCurrentPost(props.posts[0]);    
-        }
-    }, [props.posts]);
-
     // useEffect(() => {
-    //     if (props.post) {
-    //         setCurrentPost(posts[props.post - 1]);
-    //         console.log(props.post);
+    //     if (props.posts) {
+    //         setCurrentPost(props.posts[0]);    
     //     }
-    // }, [props.post])
+    // }, [props.posts]);
+
+    useEffect(() => {
+        if (props.post) {
+            setCurrentPost(posts[props.post - 1]);
+        } else {
+            setCurrentPost(props.post[0]);
+        }
+    }, [props.post])
 
     useEffect(() => {
         if (currentPost && currentPost.id == 1) {
