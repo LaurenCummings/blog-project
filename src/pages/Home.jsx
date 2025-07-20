@@ -1,10 +1,14 @@
 import '../css/Home.css';
 import { useState } from 'react';
+import { getPosts } from '../ApiCalls';
+import useFetch from './useFetch';
 import Categories from '../components/Categories';
 import CurrentPost from '../components/CurrentPost';
 import SearchResults from '../components/SearchResults';
 
 function Home() {
+    const { data, error, pending } = useFetch(getPosts, {});
+    const [posts, setPosts] = useState([]);
     const [showCurrentPost, setShowCurrentPost] = useState(true);
     const [category, setCategory] = useState();
     const [selectedPostId, setSelectedPostId] = useState();

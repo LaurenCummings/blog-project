@@ -1,12 +1,8 @@
 import '../css/CurrentPost.css';
-import { getPosts } from '../ApiCalls';
-import useFetch from './useFetch';
 import { useState, useEffect } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 function CurrentPost(props) {
-    const { data, error, pending } = useFetch(getPosts, {});
-    const [posts, setPosts] = useState([]);
     const [currentPost, setCurrentPost] = useState();
     const [firstPost, setFirstPost] = useState(false);
     const [lastPost, setLastPost] = useState(false);
@@ -31,12 +27,12 @@ function CurrentPost(props) {
         setCurrentPost(posts[0]);
     }, [posts]);
 
-    useEffect(() => {
-        if (props.post) {
-            setCurrentPost(posts[props.post - 1]);
-            console.log(props.post);
-        }
-    }, [props.post])
+    // useEffect(() => {
+    //     if (props.post) {
+    //         setCurrentPost(posts[props.post - 1]);
+    //         console.log(props.post);
+    //     }
+    // }, [props.post])
 
     useEffect(() => {
         if (currentPost && currentPost.id == 1) {
@@ -50,6 +46,8 @@ function CurrentPost(props) {
             setLastPost(false);
         }
     }, [currentPost]);
+
+    // console.log(posts[props.post -1]);
 
     return (
         <div className="feed-component">
