@@ -16,10 +16,12 @@ function SearchResults(props) {
         }
     },[data]);
 
+    console.log(postResults);
+
     return (
         <div>
             <h2>Search Results for ({props.category})</h2>
-            { postResults && postResults.map((item) => {
+            { postResults.length > 0 ? postResults.map((item) => {
                 return (
                     <div key={item.id} className="post-result" onClick={() => handlePostClick(item.id)}>
                         <h3>Post #{item.id}</h3>
@@ -27,7 +29,9 @@ function SearchResults(props) {
                     </div>
                 )
             })
-
+                : <div>
+                    <h3>There are no post results for {props.category}.</h3>
+                </div>
             }
         </div>
     )
