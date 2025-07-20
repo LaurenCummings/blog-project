@@ -1,7 +1,7 @@
 import '../css/Home.css';
 import { useState, useEffect } from 'react';
 import { getPosts } from '../ApiCalls';
-import useFetch from './useFetch';
+import useFetch from '../components/useFetch';
 import Categories from '../components/Categories';
 import CurrentPost from '../components/CurrentPost';
 import SearchResults from '../components/SearchResults';

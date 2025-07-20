@@ -18,7 +18,9 @@ function CurrentPost(props) {
     }
 
     useEffect(() => {
-        setCurrentPost(props.posts[0]);
+        if (props.posts) {
+            setCurrentPost(props.posts[0]);    
+        }
     }, [props.posts]);
 
     // useEffect(() => {
