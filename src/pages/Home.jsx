@@ -1,5 +1,5 @@
 import '../css/Home.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { getPosts } from '../ApiCalls';
 import useFetch from './useFetch';
 import Categories from '../components/Categories';
@@ -23,6 +23,12 @@ function Home() {
         setShowCurrentPost(true);
     }
 
+    useEffect(() => {
+        if (data && data.posts && data.posts.length) {
+            setPosts(data.posts);    
+        }    
+    }, [data]);
+
     return (
         <div className="home">
             <div className="categories">
@@ -30,7 +36,7 @@ function Home() {
             </div>
             <div className="feed">
                 { showCurrentPost ? 
-                    <CurrentPost post={selectedPostId} /> : <SearchResults category={category} sendSelectedPostToHome={handlePostSelect} />
+                    <CurrentPost posts={posts} post={selectedPostId} /> : <SearchResults category={category} sendSelectedPostToHome={handlePostSelect} />
                 }
             </div>
             <div className="suggested-posts">

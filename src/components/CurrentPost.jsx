@@ -18,12 +18,6 @@ function CurrentPost(props) {
     }
 
     useEffect(() => {
-        if (data && data.posts && data.posts.length) {
-            setPosts(data.posts);    
-        }    
-    }, [data]);
-
-    useEffect(() => {
         setCurrentPost(posts[0]);
     }, [posts]);
 
