@@ -9,17 +9,17 @@ function CurrentPost(props) {
 
     function getNextPost() {
         const nextPostId = currentPost.id + 1;
-        setCurrentPost(posts[nextPostId - 1]);
+        setCurrentPost(props.posts[nextPostId - 1]);
     }
 
     function getPrevPost() {
         const prevPostId = currentPost.id - 1;
-        setCurrentPost(posts[prevPostId - 1]);
+        setCurrentPost(props.posts[prevPostId - 1]);
     }
 
     useEffect(() => {
-        setCurrentPost(posts[0]);
-    }, [posts]);
+        setCurrentPost(props.posts[0]);
+    }, [props.posts]);
 
     // useEffect(() => {
     //     if (props.post) {
@@ -34,7 +34,7 @@ function CurrentPost(props) {
         } else {
             setFirstPost(false);
         }
-        if (currentPost && currentPost.id == posts.length) {
+        if (currentPost && currentPost.id == props.posts.length) {
             setLastPost(true);
         } else {
             setLastPost(false);
