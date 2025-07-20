@@ -45,12 +45,6 @@ function CurrentPost(props) {
 
     return (
         <div className="feed-component">
-            {pending ? 
-                <h3>Loading...</h3> : null
-            }
-            {error ?
-                <h3>{error}</h3> : null
-            }
             {currentPost &&
                 <div className="current-post">
                     <p>Post #{currentPost.id}</p>
