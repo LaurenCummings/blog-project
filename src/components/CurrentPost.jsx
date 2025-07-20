@@ -32,6 +32,13 @@ function CurrentPost(props) {
     }, [posts]);
 
     useEffect(() => {
+        if (props.post) {
+            setCurrentPost(posts[props.post - 1]);
+            console.log(props.post);
+        }
+    }, [props.post])
+
+    useEffect(() => {
         if (currentPost && currentPost.id == 1) {
             setFirstPost(true);
         } else {

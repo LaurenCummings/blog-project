@@ -19,8 +19,6 @@ function Home() {
         setShowCurrentPost(true);
     }
 
-    console.log(selectedPostId);
-
     return (
         <div className="home">
             <div className="categories">
