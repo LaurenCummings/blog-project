@@ -28,7 +28,7 @@ function Home() {
             </div>
             <div className="feed">
                 { showCurrentPost ? 
-                    <CurrentPost /> : <SearchResults category={category} sendSelectedPostToHome={handlePostSelect} />
+                    <CurrentPost post={selectedPostId} /> : <SearchResults category={category} sendSelectedPostToHome={handlePostSelect} />
                 }
             </div>
             <div className="suggested-posts">
