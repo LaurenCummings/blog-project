@@ -4,3 +4,8 @@
     align-items: center;
     cursor: pointer;
 }
+
+.post-result:hover {
+    background-color: black;
+    color: white;
+}
