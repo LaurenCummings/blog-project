@@ -4,7 +4,7 @@ import useFetch from './useFetch';
 import { useState, useEffect } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-function CurrentPost() {
+function CurrentPost(props) {
     const { data, error, pending } = useFetch(getPosts, {});
     const [posts, setPosts] = useState([]);
     const [currentPost, setCurrentPost] = useState();
