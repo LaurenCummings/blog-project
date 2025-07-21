@@ -1,6 +1,7 @@
 .feed-component {
     background-image: url('../assets/notebook.png');
     background-size: cover;
+    min-height: 800px;
 }
 
 .post-body {
