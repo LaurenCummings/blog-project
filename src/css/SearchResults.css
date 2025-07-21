@@ -3,6 +3,7 @@
     gap: 15px;
     align-items: center;
     cursor: pointer;
+    padding-left: 20px;
 }
 
 .post-result:hover {
