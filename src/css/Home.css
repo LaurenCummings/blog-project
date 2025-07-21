@@ -11,3 +11,13 @@
 .feed {
     flex: 3;
 }
+
+@media (max-width: 1800px) {
+    .categories {
+        flex: 4;
+    }
+
+    .feed {
+        flex: 4;
+    }
+}
