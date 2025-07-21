@@ -10,6 +10,14 @@
     padding: 150px 0px;
 }
 
+.current-post h2 {
+    font-size: 30px;
+}
+
+.current-post p {
+    font-size: 22px;
+}
+
 .post-body {
     min-height: 100px;
 }
