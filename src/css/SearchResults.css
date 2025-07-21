@@ -9,3 +9,11 @@
     background-color: black;
     color: white;
 }
+
+.post-result h3 {
+    font-size: 22px;
+}
+
+.post-result p {
+    font-size: 20px;
+}
