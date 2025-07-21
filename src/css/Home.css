@@ -10,6 +10,4 @@
 
 .feed {
     flex: 3;
-    background-image: url('../assets/notebook.png');
-    background-size: cover;
 }
