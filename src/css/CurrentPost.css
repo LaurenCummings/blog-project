@@ -43,6 +43,11 @@
     align-items: center;
 }
 
+.arrow-right:hover, .arrow-left:hover {
+    background-color: black;
+    color: white;
+}
+
 .arrow-hide {
     display: none;
 }
