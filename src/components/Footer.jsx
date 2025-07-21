@@ -1,7 +1,7 @@
 function Footer() {
     return (
-        <div>
-            Footer
+        <div className="footer">
+            <p>Data provided by <a href="https://dummyjson.com/">DummyJSON</a></p>
         </div>
     )
 }
