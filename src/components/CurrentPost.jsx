@@ -42,8 +42,6 @@ function CurrentPost(props) {
         }
     }, [currentPost]);
 
-    // console.log(posts[props.post -1]);
-
     return (
         <div className="feed-component">
             {currentPost &&
