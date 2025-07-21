@@ -20,7 +20,7 @@ function Categories({ selectCategory }) {
     
     return (
         <div>
-            <h2>Search by Topic</h2>
+            <h2>Search Posts by Topic</h2>
             <div className="categories-list">
                 {categories && categories.sort().map((item, index) => {
                     return (
