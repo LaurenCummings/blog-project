@@ -1,13 +1,14 @@
 .categories-list {
     columns: 6;
     column-gap: 0px;
-    height: 600px;
+    height: 700px;
     column-fill: auto;
     list-style-type: none;
 }
 
 .categories-list li {
     cursor: pointer;
+    font-size: 20px;
 }
 
 .categories-list li:hover {

@@ -19,7 +19,7 @@ function Categories({ selectCategory }) {
     }, [data]);
     
     return (
-        <div>
+        <div className="categories-component">
             <h2>Search Posts by Topic</h2>
             <div className="categories-list">
                 {categories && categories.sort().map((item, index) => {
