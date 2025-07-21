@@ -4,9 +4,9 @@
 }
 
 .categories {
-    flex: 3;
+    flex: 5;
 }
 
 .feed {
-    flex: 5;
+    flex: 3;
 }
