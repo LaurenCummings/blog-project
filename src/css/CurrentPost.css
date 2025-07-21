@@ -33,12 +33,14 @@
 .arrow-left {
     display: flex;
     cursor: pointer;
+    align-items: center;
 }
 
 .arrow-right {
     display: flex;
     margin-left: auto;
     cursor: pointer;
+    align-items: center;
 }
 
 .arrow-hide {
