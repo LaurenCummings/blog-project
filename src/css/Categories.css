@@ -1,6 +1,8 @@
 .categories-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    columns: 6;
+    column-gap: 0px;
+    height: 600px;
+    column-fill: auto;
     list-style-type: none;
 }
 
