@@ -39,9 +39,6 @@ function Home() {
                     <CurrentPost posts={posts} post={selectedPostId} /> : <SearchResults category={category} sendSelectedPostToHome={handlePostSelect} />
                 }
             </div>
-            <div className="suggested-posts">
-                Suggested posts
-            </div>
         </div>
     )
 }
