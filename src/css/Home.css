@@ -4,13 +4,13 @@
 
 .categories {
     display: inline-block;
-    width: calc(100vw - 700px);
+    width: calc(100vw - 800px);
     vertical-align: top;
 }
 
 .feed {
     display: inline-block;
-    width: 500px;
+    width: 600px;
     vertical-align: top;
 }
 
