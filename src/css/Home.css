@@ -1,15 +1,17 @@
 .home {
-    display: flex;
-    gap: 50px;
+    /* display: flex;
+    gap: 50px; */
     margin: 20px 80px;
 }
 
 .categories {
-    flex: 5;
+    display: inline-block;
+    width: calc(100vw - 700px);
 }
 
 .feed {
-    flex: 3;
+    display: inline-block;
+    width: 500px;
 }
 
 @media (max-width: 1800px) {
