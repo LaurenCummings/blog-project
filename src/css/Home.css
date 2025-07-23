@@ -13,13 +13,3 @@
     width: 600px;
     vertical-align: top;
 }
-
-@media (max-width: 1800px) {
-    .categories {
-        flex: 4;
-    }
-
-    .feed {
-        flex: 4;
-    }
-}
