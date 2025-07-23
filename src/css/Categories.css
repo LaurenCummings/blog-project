@@ -22,3 +22,10 @@
         height: 1200px;
     }
 }
+
+@media (max-width: 1300px) {
+    .categories-list {
+        columns: 2;
+        height: 2000px;
+    }
+}
