@@ -53,11 +53,3 @@
 .arrow-hide {
     display: none;
 }
-
-@media (max-width: 1800px) {
-    .feed-component {
-        min-height: 1000px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-}
