@@ -29,6 +29,7 @@
 
     .categories {
         order: 2;
+        width: 100%;
     }
 
     .feed {
