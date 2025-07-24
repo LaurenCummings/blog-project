@@ -17,7 +17,7 @@ function SearchResults(props) {
     },[data]);
 
     return (
-        <div>
+        <div className="search-results">
             <h2>Search Results for {props.category}</h2>
             { postResults.length > 0 ? postResults.map((item) => {
                 return (
