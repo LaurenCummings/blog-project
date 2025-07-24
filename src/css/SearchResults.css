@@ -39,4 +39,8 @@
         font-size: 16px;
         max-width: 250px;
     }
+
+    .no-results {
+        text-align: center;
+    }
 }
