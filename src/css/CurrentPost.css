@@ -53,3 +53,14 @@
 .arrow-hide {
     display: none;
 }
+
+@media (max-width: 500px) {
+    .feed-component {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .current-post {
+        max-width: 300px;
+    }
+}
