@@ -37,7 +37,7 @@
 
     .post-result p {
         font-size: 16px;
-        max-width: 250px;
+        max-width: 50%;
     }
 
     .no-results {
