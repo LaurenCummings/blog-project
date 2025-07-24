@@ -36,3 +36,9 @@
         order: 1;
     }
 }
+
+@media (max-width: 500px) {
+    .feed {
+        width: 400px;
+    }
+}
