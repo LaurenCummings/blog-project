@@ -27,7 +27,7 @@ function SearchResults(props) {
                     </div>
                 )
             })
-                : <div>
+                : <div className="no-results">
                     <h3>There are no post results for {props.category}.</h3>
                 </div>
             }
