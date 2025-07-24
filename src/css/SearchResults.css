@@ -22,11 +22,17 @@
 }
 
 @media (max-width: 500px) {
+    .post-result {
+        justify-content: center;
+    }
+
     .post-result h3 {
         font-size: 18px;
+        min-width: 80px;
     }
 
     .post-result p {
         font-size: 16px;
+        max-width: 250px;
     }
 }
